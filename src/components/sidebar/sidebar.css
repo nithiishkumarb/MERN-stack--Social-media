@@ -12,9 +12,9 @@
 ::-webkit-scrollbar-thumb{
     background-color:rgb(165, 164, 164);
 }
-.sidebarwrapper{
+/* .sidebarwrapper{
     padding:20px;
-}
+} */
 .sidebarlist{
     margin:0;
     padding:0;

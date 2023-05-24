@@ -11,7 +11,7 @@ import CardTravelIcon from '@mui/icons-material/CardTravel';
 export default function Sidebar() {
   return (
     <div className="sidebarcontainer">
-      <div classNama="sidebarwrapper">
+      <div className="sidebarwrapper">
         <ul className="sidebarlist">
           <li className="sidebarlistitem">
             <ChatBubbleIcon className="sidebaricons"/>

@@ -2,3 +2,60 @@
     flex:3;
   
 }
+.rightbarwrapper{
+    padding:20px 20px 0 0;
+}
+.gift{
+    display:flex;
+    align-items: center;
+}
+.birthdaygiftimg{
+    width:75px;
+    height:75px;
+    border-radius: 50%;
+    padding-right: 15px;
+}
+.gifttext{
+    font-weight: 300;
+    font-size:12px;
+}
+.rightbaradds{
+    width:100;
+    height:255px;
+    border-radius:10px;
+    margin:30px 0;
+}
+.rightbaronlinefriendlist{
+    padding:0;
+    margin:0;
+}
+.rightbarfriendlistitem{
+    position: relative;
+}
+.rightbarfriendlist{
+    display:flex;
+    align-items: center;
+    margin:15px; 
+}
+.rightbarfriendlist{
+    position:relative;   
+}
+.rightbarprofileimg{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    object-fit: cover;
+}
+.rightbaronlineicon{
+    width: 12px;
+    height:12px;
+    border-radius: 50%;
+    background-color:rgb(3, 211, 3);
+    position:absolute;
+    right:-1px;
+    top:-3.5px;
+    border:2px solid white;
+}
+.rightbarfriendlistname{
+    margin:10px;
+}
