@@ -1,4 +1,6 @@
 import "./rightbar.css"
+import {Users} from "../../dummydata"
+import Onlinefriendlist from "./onlinelist/Onlinefriendlist"
 export default function Rightbar() {
   return (
     <div className="rightbarcontainer">
@@ -11,76 +13,9 @@ export default function Rightbar() {
       <img src="/assests/adds.jpg" alt="adds" className="rightbaradds" />
       <h4 className="rightbartitle">Online Friends</h4>
       <ul className="rightbaronlinefriendlist">
-        <li className="rightbarfriendlist">
-          <div className="rightbarfriendlistitem">
-          <img src="/assests/person/img1.jpg" alt="" className="rightbarprofileimg" />
-          <span className="rightbaronlineicon"></span>
-          </div>
-          <span className="rightbarfriendlistname">Nithish</span>
-        </li>
-        <li className="rightbarfriendlist">
-          <div className="rightbarfriendlistitem">
-          <img src="/assests/person/img1.jpg" alt="" className="rightbarprofileimg" />
-          <span className="rightbaronlineicon"></span>
-          </div>
-          <span className="rightbarfriendlistname">Nithish</span>
-        </li>
-        <li className="rightbarfriendlist">
-          <div className="rightbarfriendlistitem">
-          <img src="/assests/person/img1.jpg" alt="" className="rightbarprofileimg" />
-          <span className="rightbaronlineicon"></span>
-          </div>
-          <span className="rightbarfriendlistname">Nithish</span>
-        </li>
-        <li className="rightbarfriendlist">
-          <div className="rightbarfriendlistitem">
-          <img src="/assests/person/img1.jpg" alt="" className="rightbarprofileimg" />
-          <span className="rightbaronlineicon"></span>
-          </div>
-          <span className="rightbarfriendlistname">Nithish</span>
-        </li>
-        <li className="rightbarfriendlist">
-          <div className="rightbarfriendlistitem">
-          <img src="/assests/person/img1.jpg" alt="" className="rightbarprofileimg" />
-          <span className="rightbaronlineicon"></span>
-          </div>
-          <span className="rightbarfriendlistname">Nithish</span>
-        </li>
-        <li className="rightbarfriendlist">
-          <div className="rightbarfriendlistitem">
-          <img src="/assests/person/img1.jpg" alt="" className="rightbarprofileimg" />
-          <span className="rightbaronlineicon"></span>
-          </div>
-          <span className="rightbarfriendlistname">Nithish</span>
-        </li>
-        <li className="rightbarfriendlist">
-          <div className="rightbarfriendlistitem">
-          <img src="/assests/person/img1.jpg" alt="" className="rightbarprofileimg" />
-          <span className="rightbaronlineicon"></span>
-          </div>
-          <span className="rightbarfriendlistname">Nithish</span>
-        </li>
-        <li className="rightbarfriendlist">
-          <div className="rightbarfriendlistitem">
-          <img src="/assests/person/img1.jpg" alt="" className="rightbarprofileimg" />
-          <span className="rightbaronlineicon"></span>
-          </div>
-          <span className="rightbarfriendlistname">Nithish</span>
-        </li>
-        <li className="rightbarfriendlist">
-          <div className="rightbarfriendlistitem">
-          <img src="/assests/person/img1.jpg" alt="" className="rightbarprofileimg" />
-          <span className="rightbaronlineicon"></span>
-          </div>
-          <span className="rightbarfriendlistname">Nithish</span>
-        </li>
-        <li className="rightbarfriendlist">
-          <div className="rightbarfriendlistitem">
-          <img src="/assests/person/img1.jpg" alt="" className="rightbarprofileimg" />
-          <span className="rightbaronlineicon"></span>
-          </div>
-          <span className="rightbarfriendlistname">Nithish</span>
-        </li>
+        {Users.map((u)=>(
+          <Onlinefriendlist key={u.id} onlinelist={u}/>
+        ))}
       </ul>
      </div>
     </div>

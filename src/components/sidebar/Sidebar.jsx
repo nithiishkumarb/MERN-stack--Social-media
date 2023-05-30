@@ -8,7 +8,9 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import WorkIcon from '@mui/icons-material/Work';
 import EventIcon from '@mui/icons-material/Event';
 import CardTravelIcon from '@mui/icons-material/CardTravel';
-export default function Sidebar() {
+import {Users} from "../../dummydata";
+import Friendlist from "./friendlist/Friendlist"
+export default function Sidebar(){
   return (
     <div className="sidebarcontainer">
       <div className="sidebarwrapper">
@@ -69,104 +71,9 @@ export default function Sidebar() {
         <button className="sidebarshowmorebtn">Show more</button>
         <hr className="sidebarhr"/>
         <ul className="sidebarfrndlist">
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li> <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li> <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
-          <li className="sidebarfrnd">
-            <img className="sidebarfrndlisticon" src="/assests/person/download.jfif" alt="friendimg"/>
-            <span className="sidebarfrndlistname">Nithish</span>
-          </li>
+          {Users.map((u)=>(
+           <Friendlist key={u.id} list={u}/>
+          ))}
         </ul>
       </div>
     </div>

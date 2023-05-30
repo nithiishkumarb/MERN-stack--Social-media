@@ -1,0 +1,14 @@
+.sidebarfrnd{
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor:pointer;
+}
+.sidebarfrndlisticon{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-right:15px;
+    margin-left: 30px;
+}

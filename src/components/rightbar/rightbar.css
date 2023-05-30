@@ -28,33 +28,3 @@
     padding:0;
     margin:0;
 }
-.rightbarfriendlistitem{
-    position: relative;
-}
-.rightbarfriendlist{
-    display:flex;
-    align-items: center;
-    margin:15px; 
-}
-.rightbarfriendlist{
-    position:relative;   
-}
-.rightbarprofileimg{
-    width:32px;
-    height:32px;
-    border-radius:50%;
-    object-fit: cover;
-}
-.rightbaronlineicon{
-    width: 12px;
-    height:12px;
-    border-radius: 50%;
-    background-color:rgb(3, 211, 3);
-    position:absolute;
-    right:-1px;
-    top:-3.5px;
-    border:2px solid white;
-}
-.rightbarfriendlistname{
-    margin:10px;
-}
