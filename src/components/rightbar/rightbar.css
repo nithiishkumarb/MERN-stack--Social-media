@@ -33,6 +33,29 @@
     font-weight: 500;
     margin-bottom:10px;
 }
+.rightbarinfo{
+    margin-bottom: 30px;
+}
+.rightbarinfoitem{
+    margin-bottom:10px;
+}
+.rightbarinfokey{
+    font-weight: 500;
+    margin-right:15px;
+    color:#555;
+}
+.rightbarinfovalue{
+    font-weight: 300;
+}
+.rightbarfollowings{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.rightbarfollowing{
+    display:flex;
+    flex-direction: column;
+}
 .rightbarfollowingimg{
     width:100px;
     height:100px;

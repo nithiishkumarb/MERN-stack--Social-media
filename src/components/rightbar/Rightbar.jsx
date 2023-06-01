@@ -1,8 +1,8 @@
 import "./rightbar.css"
 import {Users} from "../../dummydata"
 import Onlinefriendlist from "./onlinelist/Onlinefriendlist"
-export default function Rightbar() {
-  const homeRightbar=()=>{
+export default function Rightbar({profile}) {
+  const HomeRightbar=()=>{
     return(
       <>
       <div className="gift">
@@ -26,37 +26,37 @@ export default function Rightbar() {
       <h1 className="Profilerightbar">User's information</h1>
       <div className="rightbarinfo">
         <div className="rightbarinfoitem">
-          <span rightbarinfokey>City:</span>
+          <span className="rightbarinfokey">City:</span>
           <span className="rightbarinfovalue">India</span>
         </div>
         <div className="rightbarinfoitem">
-          <span rightbarinfokey>From:</span>
+          <span className="rightbarinfokey">From:</span>
           <span className="rightbarinfovalue">Tamil Nadu</span>
         </div>
         <div className="rightbarinfoitem">
-          <span rightbarinfokey>Relationship:</span>
+          <span className="rightbarinfokey">Relationship:</span>
           <span className="rightbarinfovalue">Single</span>
         </div>
         <h1 className="Profilerightbar">User's Friends</h1>
         <div className="rightbarfollowings">
           <div className="rightbarfollowing">
-            <img src="/assests/person/person1.jpg" alt="profile" className="rightbarfollowingimg" />
+            <img src="/assests/person/profile1.jpg" alt="profile" className="rightbarfollowingimg" />
             <span className="rightbarusers">Nithish</span>
           </div>
           <div className="rightbarfollowing">
-            <img src="/assests/person/person2.jpg" alt="profile" className="rightbarfollowingimg" />
+            <img src="/assests/person/profile2.jpg" alt="profile" className="rightbarfollowingimg" />
             <span className="rightbarusers">Nithish</span>
           </div>
           <div className="rightbarfollowing">
-            <img src="/assests/person/person3.jpg" alt="profile" className="rightbarfollowingimg" />
+            <img src="/assests/person/profile3.jpg" alt="profile" className="rightbarfollowingimg" />
             <span className="rightbarusers">Nithish</span>
           </div>
           <div className="rightbarfollowing">
-            <img src="/assests/person/person4.jpg" alt="profile" className="rightbarfollowingimg" />
+            <img src="/assests/person/profile4.jpg" alt="profile" className="rightbarfollowingimg" />
             <span className="rightbarusers">Nithish</span>
           </div>
           <div className="rightbarfollowing">
-            <img src="/assests/person/person5.jpg" alt="profile" className="rightbarfollowingimg" />
+            <img src="/assests/person/profile5.jpg" alt="profile" className="rightbarfollowingimg" />
             <span className="rightbarusers">Nithish</span>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function Rightbar() {
   return (
     <div className="rightbarcontainer">
      <div className="rightbarwrapper">
-    <ProfileRightbar/>
+      {profile ? <ProfileRightbar/> : <HomeRightbar/>}
      </div>
     </div>
   )
