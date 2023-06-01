@@ -28,3 +28,14 @@
     padding:0;
     margin:0;
 }
+.Profilerightbar{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom:10px;
+}
+.rightbarfollowingimg{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    border-radius:5px;
+}
